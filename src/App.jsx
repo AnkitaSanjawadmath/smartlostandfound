@@ -91,7 +91,8 @@ function ProtectedRoute({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    //<BrowserRouter>
+      <BrowserRouter basename="/smartlostandfound">
       <Routes>
 
         {/* ==============================================
