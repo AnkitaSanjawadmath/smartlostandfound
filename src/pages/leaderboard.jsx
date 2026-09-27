@@ -113,7 +113,7 @@ export function Leaderboard() {
                     fontFamily: "serif",
                     fontSize: "16px"
                   }}>
-                    {founder.name ? founder.name.charAt(0).toUpperCase() : 'U'}
+                    {founder.name ? founder.name.charAt(5).toUpperCase() : 'U'}
                   </div>
 
                   {/* Clean formatted User identifier */}
@@ -162,3 +162,4 @@ export function Leaderboard() {
     </div>
   );
 }
+
