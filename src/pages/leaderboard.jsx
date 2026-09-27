@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getLeaderboardData } from '../services/leaderboard';
 
-export function LeaderboardData() {
+export function Leaderboard() {
   const [leaders, setLeaders] = useState([]);
   const [loading, setLoading] = useState(true);
 
