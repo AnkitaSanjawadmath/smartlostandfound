@@ -1,6 +1,6 @@
 import { supabase } from './supabase'; // Adjust path if needed
 
-export const getLeaderboard = async () => {
+export const getLeaderboardData = async () => {
   const { data, error } = await supabase
     .from('items')
     .select(`
