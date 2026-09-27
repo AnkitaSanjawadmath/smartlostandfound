@@ -622,7 +622,7 @@ function Dashboard() {
                   <Sparkles size={18} />
                   SmartMatch
                 </Link>
-              //{/* <Link
+              {/* <Link
               to="/leaderboard"
               className="secondary-button"
               style={{
