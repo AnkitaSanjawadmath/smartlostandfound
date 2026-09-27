@@ -11,7 +11,6 @@ export const getLeaderboardData = async () => {
       .select(`
         user_id,
         profiles:user_id (
-          username,
           full_name
         )
       `);
@@ -31,8 +30,7 @@ export const getLeaderboardData = async () => {
       
       // Dynamic fallback checklist: 
       // Look for full_name first, then username, then fall back to the raw truncated ID string.
-      const displayName = item.profiles?.full_name || 
-                          item.profiles?.username || 
+      const displayName = item.profiles?.full_name ||  
                           `User ${id.substring(0, 5)}...`;
 
       if (!id) return accumulator;
