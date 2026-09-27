@@ -46,5 +46,5 @@ export const getLeaderboardData = async () => {
     console.error('Unexpected error fetching leaderboard:', err);
     return [];
   }
-
+}
 
